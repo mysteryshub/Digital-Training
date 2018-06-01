@@ -1,0 +1,10 @@
+logo logobelow{
+	position:absolute;
+}
+links{
+	//margin-top: 50px;margin-left: 200px;position: absolute;
+}
+ul li{
+	list-style-type: none;float:left;margin-top: 50px;margin-right: 200px;position: absolute;
+}
+
