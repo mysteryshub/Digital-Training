@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+a{text-decoration: none;
+color:white;
+}
+a:HOVER{
+color:blue;
+background-color: white;
+}
+button{
+width:200px;
+height:70px;
+background-color:windowframe;padding:20px;
+border-style: double;
+
+
+}
+</style>
+ <script type="text/javascript">
+var a,b,c,d
+ function showpage(a,b,c,d)
+{
+	
+	  document.getElementById(a).style.display="block";
+	document.getElementById(b).style.display="none";
+	document.getElementById(c).style.display="none";
+	document.getElementById(d).style.display="none";
+	
+} 
+
+
+
+</script>
+
+</head>
+<body>
+<div id="logo" style="background-image:url('/ecommerce/images/logo.jpg');width:100%;height:200px;position:absolute;" >
+
+
+<div >
+<div style="position:relative;float:left;margin-right:65px;margin-left:600px;margin-top:140px;font-size: 30px;color:white"><a href="/ecommerce/html/tour.html">Tour</a></div>
+<div style="position:relative;float:left;margin-right:65px;font-size: 30px;margin-top:140px;color:white"><a href="/ecommerce/html/features.html">Features</a></div>
+<div style="position:relative;float:left;margin-right:65px;font-size: 30px;color:white;margin-top:140px"><a href="/ecommerce/html/contactus.html">Contact us</a></div>
+<div style="position:relative;float:left;margin-right:65px;font-size: 30px;color:white;margin-top:140px"><a href="/ecommerce/jsp/courses.jsp">Courses</a></div>
+<div style="position:relative;float:left;font-size: 30px;color:white;margin-top:140px"><a href="/ecommerce/jsp/signin.jsp">Sign in</a></div>
+</div>
+</div>
+<div style="position: absolute;margin-top: 220px;background-color: menu;width:100%;height:800px">
+<a href="/ecommerce/jsp/home.jsp" style="margin-left:1200px; ;color:black;text-decoration: underline;font-size: 20px"><b>Home</b></a>
+<div style='position: absolute;'><p style="color:blue;font-size: 70px;font-style: italic;margin-left: 150px">Tour<br></div>
+<table >
+<tr><td><video src="/ecommerce/vedio/training.MP4" loop='loop' autoplay="autoplay" controls="controls" style="width:800px;height:800px;margin-left:100px" ></video></td>
+<td><div style="float:left;position: relative;padding:20px"><p style="font-size: 20px;">We have prepared a short demo video (less than 4 minutes) that quickly shows customers how Digital HQ
+ looks and works. In this video, our Chief Everything Officer takes you through the course creation process and shows the user management, blog, category management, reporting, 
+administration settings and support functionality of tfhe Digital HQ Online Training Platform.</p></div></td>
+<tr><td colspan="2"><p style="color:orange;font-size: 45px;text-align: center">All Features on DigitalHQTraining</p><td></tr>
+<tr><td colspan="2" style="padding:40px;width:100px;height:500px" ><div style=" width:250px;height:600px;background-color: menu;padding:20px;	"><br><br>
+
+<br><br>
+<button id="bu1" onclick="showpage('div1','div2','div3','div4')" >Users</button><br><br>
+<button id="bu2" onclick="showpage('div2','div1','div3','div4')">Courses</button><br><br>
+<button id="bu3" onclick="showpage('div3','div1','div2','div4')">Administration</button><br><br>
+<button id="bu4" onclick="showpage('div4','div1','div2','div3')">Communication</button><br><br>
+
+<div id="div1" style="position :absolute;width:900px;height:850px;margin-top:-440px;margin-left: 300px;background-color: menu;float:left;margin-bottom: 10x;padding:30px;display:block;border-style: solid;">
+<h1>User Roles</h1>
+The User Roles functionality is a fundamental aspect of the Digital HQ application and allows administrators to define which users get which privileges on the application.
+
+<h1>Client Owner</h1>
+There can be only one Client Owner in an organization. The client owner can add and edit categories and change the settings for their organization. Client Owners also have all the privileges of Department Heads, Client Instructors and End Users.
+
+<h1>Department Head</h1>
+There can be multiple Department Heads in an organization. Department Heads can manage users within their own departments and view their reports. They can also edit Category Settings for Categories that they are assigned to.
+
+<h1>Client Instructors</h1>
+There can be multiple Client Instructors in an organization. The Client Instructor creates courses for your organization and tests them to make sure they work correctly. They can also write blog posts.
+
+<h1>End Users</h1>
+These are the users that are actually being trained. End Users can manage their own profiles, access courses, and read blog posts. They can also provide feedback and get access to support for this application.
+
+<h1>Profile</h1>
+Users can access their profile through the sidebar. The profile allows the user to customize and display their personal details, which is useful when identifying and interacting with multiple users. Personal information like their date of birth, designation and bio are displayed on the Profile, and the user can also change their password through their profile page.
+
+<h1>User Management</h1>
+Client Owners and Department Heads can access the User Management section on the sidebar. This section allows administrators to add single users, or import or export bulk user data. User information and settings can be modified, users can be suspended, goals can be assigned and user reports can be accessed from this section.
+
+ </div>
+ 
+ <div id="div2" style="position :absolute;width:900px;height:850px;margin-top:-440px;margin-left: 300px;background-color: menu;float:left;margin-bottom: 10x;padding:30px;display:none;border-style: solid;">
+<h1>Course Management</h1>
+This will most likely be the most frequently used component of the Digital HQ Online Training Platform. Administrators can add new courses and modify settings for existing courses. End Users can access courses that administrators have allowed them to access.
+
+<h1>Course Settings</h1>
+Digital HQ offers administrators with a wide range of settings to ensure access to course content is tightly controlled. Courses can be restricted based on date, number of days or maximum enrollments. Access to a course can also be restricted based on the country that the user is accessing the course from. Administrators can also choose whether the course modules should be accessed sequentially or if users can access any module whenever they like. Courses can be allocated to specific user categories like department, designation or batch, ensuring that only the right user can access the course. Once the course has been published, administrators can decide whom to assign the course as a goal for. Only those users will be able to enroll into the course, while other users will only be able to view the course description and add the course to their wish list.
+
+<h1>Course Modules</h1>
+Each course is made up of chapters and each chapter contains modules. A chapter is simply a means to divide a course into meaningful sections. A module can be any form of media: text, slideshow, video, SCORM, event, discussion or quiz. Each module can be individually edited or relocated within the course. Administrators can attach downloadable files to each module. Users can rate each module based on how effective they felt the module was and administrators can access these scores in the Reporting page.
+
+<h1>Discussions</h1>
+Each course has its own discussion section where users can ask questions and exchange ideas. Course instructors are also encouraged to access the discussions as often as possible to chime in and address concerns. Users can vote on questions they feel are valid, and questions with more votes are displayed more prominently. Users are notified each time there is a new contribution to their discussion.
+
+<h1>Bookmarks</h1>
+The bookmarks feature is accessible by clicking the star on the header and allows users to quickly access important modules by saving them as a bookmark.
+
+<h1>Marketplace (Coming Soon)</h1>
+We are currently in the process of adding thousands of hours of internationally certified training content in subjects like Sales and Marketing, Customer Service, Ethics and Leadership. Courses will be available through our marketplace where clients can simply click to launch any course throughout their organization.
+</div>
+ <div id="div3" style="position :absolute;width:900px;height:850px;margin-top:-440px;margin-left: 300px;background-color: menu;float:left;margin-bottom: 10x;padding:30px;display:none;border-style: solid;">
+<h1>Category Management</h1>
+Courses, users and blogs can be classified into categories in order to simplify access and tighten control over who sees what. Types of categories include course, level, department, designation, location, division, batch and other. Courses, users and blogs can be assigned to multiple categories.
+
+<h1>Reporting</h1>
+The reporting section can be accessed from the sidebar. The main reporting panel offers insights to administrators about their organization as a whole, including information about how many users are logging in each month, how many new courses are being added each month and how many users are completing their courses each month. The reporting feature in the User Management and Course Management pages gives administrator more specific information like the progress of each user in each course or their scores in tests and exams in each course.
+
+<h1>Settings Management</h1>
+The settings panel can be accessed through the sidebar and allows the user to customize the Digital HQ Online Training Platform to suit their needs and requirements.
+
+<h1>Site Settings</h1>
+Basic site and client information.
+
+<h1>Visual Settings</h1>
+Administrators can customize the look of the application based on their branding requirements.
+
+<h1>Notification Settings</h1>
+SMTP settings along with email and notification settings.
+
+<h1>Billing Settings</h1>
+Limits on new user creation, new course creation and date-based restriction for the whole organization.
+
+<h1>Security Settings</h1>
+Password policy customization, enable forgot password, static IP address and more can be set.
+
+
+</div>
+
+ <div id="div4" style="position :absolute;width:900px;height:850px;margin-top:-440px;margin-left: 300px;background-color: menu;float:left;margin-bottom: 10x;padding:30px;display:none;border-style: solid;">
+
+<h1>Blog</h1>
+The Blog, also known as the announcements section, is accessible through the sidebar. Administrators can edit and publish announcements, and assign categories to each post to dictate who is able to see the post.
+
+<h1>Notifications</h1>
+Notifications are system-generated and display in the header under the bell icon. A notification is generally an indication of an external action, such as an administrator assigning a user to a course or another user responding to a comment in a discussion. Administrators can decide which notifications are also emailed to the user by going to Notification Settings.
+
+<h1>Alerts</h1>
+Alerts are system-generated confirmation messages that display in the top right corner of the window, generally in response to a user’s own actions, for example when they change their password or delete a course.
+
+<h1>Support</h1>
+The support section can be found in the sidebar and is a way for the users of a client to communicate with the team and Digital HQ and vice versa. Through this page, users can access FAQ, submit bugs and learn more about the status of the Digital HQ application.
+
+
+
+</div>
+</div>
+</td></tr>
+
+
+</table>
+<div style="width:1400px;height:130px;position:absolute;padding:40px;background-color: #18107E ;margin-top: 300px ">
+<p style="font-size: 45px;color:white;">Would you like to tour a DigitalHQTrainning  <a href="/ecommerce/html/tour.html" style="border-style:solid;border-color:white;margin-left: 80px;PADDING:15PX;font-size:25px">TAKE A TOUR</a></p>
+
+</div>
+<div style="height:200px;background-color: #38364F  ;padding:25px;margin-top: 520px"><p style="font-size: 20px"><a href="/ecommerce/html/tour.html"><br>About DigitalHQTraining: The quick and affordable online training management solution for organizations to train, test and track their employees, students, customers or vendors. Digital HQ is the property of Firstventure Corporation Private Limited, an up-and-coming privately-funded education-technology company founded in March 2012, headquartered in Mumbai, India.</a>
+<br><br><br><br><b>DigitalHQTraining Online Training Platform © 2016. All Rights Reserved.</b></p></div>
+</div>
+</div>
+
+
+
+
+
+</body>
+</html>
